@@ -1,11 +1,11 @@
 chrome.contextMenus.create({
-	id: "log-selection",
-	title: "Log '%s' to the console",
+	id: "get-insight",
+	title: "Get insight to '%s'",
 	contexts: ["selection"]
 });
 
 chrome.contextMenus.onClicked.addListener(function (info, tab) {
-	if(info.menuItemId === "log-selection") {
+	if(info.menuItemId === "get-insight") {
 		var articleContent = {
 			"documents": [{
 				"language": "en",

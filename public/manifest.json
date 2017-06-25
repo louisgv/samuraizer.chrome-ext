@@ -19,6 +19,7 @@
 		{
 			"matches": ["<all_urls>"],
 			"js": ["mark.min.js", "content.js"],
+			"css": ["mark.css"],
 			"run_at": "document_end"
 		}
 	],
