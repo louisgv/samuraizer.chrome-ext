@@ -4,10 +4,12 @@ import { Button, Card, Image } from 'semantic-ui-react'
 
 import './App.css';
 
+const log = chrome.extension.getBackgroundPage().console.log;
+
 export default class App extends Component {
 
 	handleOnClick=()=> {
-		console.log("HELLO");
+		log("HELLO");
 	}
 
 	render() {
