@@ -2,14 +2,14 @@
   "name": "samuraizer.chrome-ext",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-		"react": "^15.6.1",
-		"react-dom": "^15.6.1",
-		"semantic-ui-css": "^2.2.10",
-		"semantic-ui-react": "^0.70.0",
-    "react-scripts": "1.0.7"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-json-tree": "^0.10.9",
+    "react-scripts": "1.0.7",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.70.0"
   },
   "scripts": {
     "start": "react-scripts start",
