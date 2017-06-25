@@ -1,6 +1,6 @@
 mark {
-	background: green;
-	color: white;
+	background-color: green !important;
+	color: white !important;
 	padding: 4.5px !important;
-	border-radius: 9px;
+	border-radius: 9px !important;
 }

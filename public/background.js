@@ -27,7 +27,7 @@ chrome.contextMenus.onClicked.addListener(function (info, tab) {
 				return res.json();
 			})
 			.then(function (json) {
-				keywords = json.documents[0].keyPhrases;
+				keywords = json.documents[0].keyPhrases.slice(0, 10);
 				chrome.tabs.query({
 					active: true,
 					currentWindow: true
