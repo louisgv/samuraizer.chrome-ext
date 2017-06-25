@@ -15,6 +15,14 @@
 	"description": "What would you say if I told you there is a app on the market that can samuraize your email. It is very good and here it is.",
 	"version": "1.0",
 
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["mark.min.js", "content.js"],
+			"run_at": "document_end"
+		}
+	],
+
 	"background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -25,6 +33,9 @@
 		"default_popup": "index.html"
 	},
 	"permissions": [
-		"activeTab"
+		"tabs",
+		"contextMenus",
+		"activeTab",
+		"<all_urls>"
 	]
 }
